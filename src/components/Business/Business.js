@@ -3,6 +3,8 @@ import "./Business.css";
 
 class Business extends React.Component {
   render() {
+    console.log("--- Business");
+    console.log(this.props.business);
     return (
       <div className="Business">
         <div className="image-container">

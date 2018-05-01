@@ -4,11 +4,13 @@ import "./BusinessList.css";
 
 class BusinessList extends React.Component {
   render() {
+    console.log("--- BusinessList");
+    console.log(this.props.businesses);
     return (
       <div className="BusinessList">
         {
           this.props.businesses.map(businessValue => {
-            return <Business business={businessValue}/>;
+            return <Business key={businessValue.id} business={businessValue}/>;
           })
         }
       </div>
